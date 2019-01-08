@@ -100,11 +100,8 @@
 .grid-2{
   grid-template-columns: 1fr;
 }
-.logot{
-  width:200px;
+.logo{
+  weight:200px;
   height:200px;
 }
-}
-.bg-up{
-    background-color: currentColor;
 }
