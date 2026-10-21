@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Wanderer</title>
+<meta name="description" content="What Wanderer stores, why, and how to delete it.">
+<meta name="theme-color" content="#FAF8F5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0D0D" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Privacy Policy · Wanderer">
+<meta property="og:description" content="What Wanderer stores, why, and how to delete it.">
+<meta property="og:image" content="img/icon.png">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/PlusJakartaSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/icon.png" alt="" width="30" height="30">Wanderer</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html#how" class="opt">How it works</a>
+      <a href="index.html#pro" class="opt">Pro</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<article class="doc">
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective 21 October 2026</p>
+  <p class="intro">Wanderer stores only what the quest loop needs. We do not sell personal information, and we do not show ads.</p>
+  <h2>Account</h2>
+<p>Email, password, username, display name, and bio live in our database so you can sign in and so other explorers can see the public profile you chose to share.</p>
+<h2>Location</h2>
+<p>When you generate or verify a quest, we use your live position to find nearby places and to check that you were there. Exact capture coordinates from a verification are visible to you and to moderators reviewing that photo. They are not placed on the public leaderboard.</p>
+<h2>Photos</h2>
+<p>Verification photos are uploaded so a quest can be checked. Moderators can open a photo that was sent for review. Photos are not used to train a public model.</p>
+<h2>Purchases</h2>
+<p>A Pro trial is recorded on your account. A store subscription is confirmed with Google Play or the App Store. Wanderer keeps the product id and the receipt token so it can tell whether Pro is still active. The store handles the charge.</p>
+<h2>What you can change</h2>
+<p>You can edit your name, username, bio, and home city, change your password, turn notifications on or off, sign out of this phone, and delete the account from Profile. Deleting the account removes your profile, quests, and photos 14 days later; signing back in before then keeps it. A store subscription has to be canceled in Google Play or the App Store.</p>
+<h2>Sign in with Google</h2>
+<p>If you choose Google, we receive your Google account email, name and profile photo, and use them only to sign you in and fill an empty profile. We never see your Google password.</p>
+<h2>Services that process data for us</h2>
+<p>Supabase hosts our database, sign-in and photo storage. Google Play handles payments; we never see your card. To build quests, your approximate position is sent from our servers to OpenStreetMap place services and to Open-Meteo for the local weather, without your name or email. In mainland China the app looks up nearby places with Tianditu from your phone. Photo checks such as recognising objects run on your phone.</p>
+<h2>On your phone</h2>
+<p>The app keeps a copy of recent screens on your phone so it opens quickly and works when the connection drops. If you add the home-screen widget, today's quest title and your streak are stored on the phone for it. Reminders are scheduled on the phone.</p>
+<h2>How long we keep data</h2>
+<p>We keep your account data while your account exists. When you delete the account, it is kept for 14 days in case you change your mind, then your profile, quests, photos, streak and rating are deleted. Purchase records may be kept as long as tax and store rules require.</p>
+<h2>Children</h2>
+<p>Wanderer is not for children under 16, and we do not knowingly collect their data. If you believe a child has an account, contact us and we will delete it.</p>
+<h2>Security</h2>
+<p>Data travels encrypted (HTTPS). Database rules let each account read and change only its own private data.</p>
+<h2>Your rights</h2>
+<p>You can see and change your data in the app, and delete your account at any time (see <a href="delete-account.html">Delete your account</a>). You can also email us to ask for a copy of your data or for it to be deleted.</p>
+<h2>Changes and contact</h2>
+<p>If this policy changes, we will update the date above and show the change in the app. Contact: <a href="mailto:wandererapp.support@gmail.com">wandererapp.support@gmail.com</a>.</p>
+
+</article>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Wanderer</span>
+    <nav aria-label="Footer">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+      <a href="delete-account.html">Delete your account</a>
+      <a href="mailto:wandererapp.support@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+<script>
+// Fade sections in as they scroll into view. Without JS everything shows.
+(() => {
+  const els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { els.forEach(e => e.classList.add('in')); return; }
+  const io = new IntersectionObserver(entries => entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { rootMargin: '0px 0px -10% 0px' });
+  els.forEach(e => io.observe(e));
+})();
+</script>
+</body>
+</html>
