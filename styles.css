@@ -182,6 +182,11 @@ footer a:hover { color: var(--text); }
 .toc a:hover { text-decoration: none; border-color: var(--accent); }
 
 /* Reveal on scroll */
-.reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1); }
-.reveal.in { opacity: 1; transform: none; }
-@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
+/* Only hidden when JS runs (html.js), so crawlers and no-JS readers see everything. */
+.js .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1); }
+.js .reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .js .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
+.tagline { font: 700 clamp(30px, 5vw, 52px)/1.08 var(--display); letter-spacing: -0.025em; margin: 10px 0 0; }
+.about { max-width: 760px; margin: 0 auto; text-align: left; }
+.about p { color: var(--muted); }
+.about strong { color: var(--text); }
